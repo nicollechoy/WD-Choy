@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 body{
@@ -22,12 +22,12 @@ body{
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0,0.2);
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
 }
-
-.container .right{
+   
+.container .left{
     position: relative;
-    background: #fff;
+    background: #167266;
     padding: 40px;
 }
 
@@ -35,12 +35,13 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: cetner;
+    align-items: center;
     padding: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .profileText .profileImg{
+    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -59,7 +60,8 @@ body{
 .profileText h2{
     color: #fff;
     font-size: 1.5em;
-    margin-transform: uppercase;
+    margin-top: 20px;
+    text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
@@ -86,10 +88,6 @@ body{
     position: relative;
 }
 
-.Info ul{
-    postion: relative;
-}
-
 .Info ul li{
     position: relative;
     list-style: none;
@@ -102,6 +100,11 @@ body{
     width: 30px;
     font-size: 20px;
     color: #0af6d7;
+}
+
+.Info ul li span{
+    color: #fff;
+    font-weight: 200;
 }
 
 .Info.education li{
@@ -133,7 +136,7 @@ body{
 }
 
 .Info.language .percent div{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     height:100%;
@@ -204,6 +207,7 @@ p{
 .skills .box .precent{
     position: relative;
     width: 100%;
+    height: 10px;
     background: #f0f0f0;
 }
 
@@ -226,3 +230,40 @@ p{
     font-weight: 500;
     margin: 12px 0;
 }
+
+.interest ul li .icon{
+    color: #06f6d7;
+    font-size: 18px;
+    width: 35px;
+}
+
+@media(max-width : 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media(max-width : 600px){
+    .about .box{
+        flex-direction: column;
+    }
+
+    .about .box .year_company{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+ }

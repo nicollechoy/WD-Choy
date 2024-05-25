@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Using HTML & CSS
-    </title>
+    <title>CV Using HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    < class="container">
+<div>
+    <div class="container">
         <div class="left">
             <div class="profileText">
                 <div class="profileImg">
-                    <img src="picture.jpeg" alt="">
+                    <img src="img/picture.jpeg" alt="">
                 </div>
                 <h2>Nicolle France S. Choy <br> <span>Web Developer</span></h2>
             </div>
@@ -85,7 +86,10 @@
                 </li>
             </ul>
         </div>
-            <div class="right"></div>
+
+    </div>
+
+            <div class="right">
                 <div class="about">
                     <h2 class="title2">Profile</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -97,8 +101,8 @@
                     <h2 class="title2">Experience</h2>
                     <div class="box">
                         <div class="year_company"></div>
-                        <h5>2027-2028</h5>
-                        <h5>Monde Nissin Corporation</h5>
+                          <h5>2027-2028</h5>
+                          <h5>Monde Nissin Corporation</h5>
                     </div>
 
                 <div class="text">
@@ -108,6 +112,7 @@
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
             </div>
+        </div>
 
             <div class="about skills">
                 <h2 class="title2">Professional Skills</h2>
@@ -116,36 +121,35 @@
                     <div class="precent"></div>
                     <div style="width: 70%;"></div>
                 </div>
+            </div>
 
-                <div class="about skills">
-                    <h2 class="title2">Professional Skills</h2>
                     <div class="box">
                         <h4>CSS</h4>
                         <div class="precent"></div>
-                        <div style="width: 50%;"></div>
+                             <div style="width: 50%;"></div>
                     </div>
+                </div>
 
-                    <div class="about skills">
-                        <h2 class="title2">Professional Skills</h2>
-                        <div class="box">
-                            <h4>C++</h4>
-                            <div class="precent"></div>
-                            <div style="width: 50%;"></div>
-                        </div>
+                <div class="box">
+                    <h4>C++</h4>
+                    <div class="precent"></div>
+                        <div style="width: 50%;"></div>
+                  </div>
             </div>
         </div>
 
         <div class="about interest">
-            <h2 class="title">Interests</h2>
+            <h2 class="title2">Interests</h2>
             <ul>
-                <li><ion-icon name="book-outline"></ion-icon>Reading</li>
-                <li><ion-icon name="bowling-ball-outline"></ion-icon>Bowling</li>
-                <li><ion-icon name="bowling-ball-outline"></ion-icon>Cooking</li>
-                <li><ion-icon name="bowling-ball-outline"></ion-icon>Listening to Music</li>
+                <li><ion-icon class ="icon" name="book-outline"></ion-icon>Reading</li>
+                <li><ion-icon class ="icon" name="bowling-ball-outline"></ion-icon>Bowling</li>
+                <li><ion-icon class ="icon" name="bowling-ball-outline"></ion-icon>Cooking</li>
+                <li><ion-icon class ="icon" name="bowling-ball-outline"></ion-icon>Listening to Music</li>
             </ul>
         </div>
+     </div>
     </div>
 </body>
-<script type="module" src="https://ionic.io/ionicons">
-<script nomodule src=""></scr
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
